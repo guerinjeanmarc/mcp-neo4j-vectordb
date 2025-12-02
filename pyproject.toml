@@ -1,0 +1,39 @@
+[project]
+name = "mcp-neo4j-vectordb"
+version = "0.1.0"
+description = "Neo4j MCP server that mimics a pure vector database for RAG comparison: vector search, fulltext search, no graph traversal"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Jean-Marc Guerin"}
+]
+keywords = ["neo4j", "vector-database", "mcp", "vector-search", "rag", "llm"]
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.10.5",
+    "neo4j>=5.26.0",
+    "pydantic>=2.10.1",
+    "tiktoken>=0.11.0",
+    "openai>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/guerinjeanmarc/mcp-neo4j-vectordb"
+Repository = "https://github.com/guerinjeanmarc/mcp-neo4j-vectordb"
+Issues = "https://github.com/guerinjeanmarc/mcp-neo4j-vectordb/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pyright>=1.1.389",
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.20.3",
+    "ruff>=0.11.5",
+]
+
+[project.scripts]
+mcp-neo4j-vectordb = "mcp_neo4j_vectordb:main"
+
