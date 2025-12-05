@@ -75,14 +75,14 @@ Discover available indexes and searchable node properties (no relationships show
 Semantic similarity search.
 
 **Example prompt:**
-> "Find movies similar to 'a hero's journey in space' using moviePlotsEmbedding"
+> "Find movies about 'a hero's journey in space'"
 
 ### `fulltext_search`
 
 Keyword search with Lucene syntax.
 
 **Example prompt:**
-> "Search for 'Tom Hanks' in the personFulltext index"
+> "Where was Tom Hanks born??"
 
 ### `get_node_by_id`
 
